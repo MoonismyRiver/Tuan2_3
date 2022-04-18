@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số</title>
+</head>
+<body>
+<script>
+    let N = +prompt("nhap so:");
+    if ((N % 2) == 0) {
+        alert('số này chia hết cho 2')
+    } else {
+        let i = 2;
+        let check = true;
+        for (; i <= (N / 2); i++) {
+            if (N % i == 0) {
+                check = false;
+                break;
+            }
+
+
+        }
+        if (check) {
+            alert(N + " là số nguyên tố ");
+        } else alert(N + "bkhong phai so nguyen to");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+</head>
+<body>
+<h2>Tính số mũ </h2>
+
+Nhập số thứ nhất vào ô: <input id="number" type="number">
+<br><br>
+Nhập số thứ 2 vào ô: <input id="number2" type="number"><br><br>
+
+<button id="submit" onclick="tinhtoan()">Hiển thị kết quả</button>
+<br><br>
+Bình phương số thứ nhất : <p id="chuvi"></p>
+Số thứ nhất với sô thứ 2 là số mũ : <p id="dientich"></p>
+
+<script>
+    function tinhtoan() {
+        let a = document.getElementById("number").value;
+        let b = document.getElementById("number2").value;
+        let x = a**2;
+        let y = a**b;
+        document.getElementById("chuvi").innerHTML = (x);
+        document.getElementById("dientich").innerHTML = (y);
+    }
+</script>
+</body>
+</html>
