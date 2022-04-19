@@ -6,7 +6,7 @@
 </head>
 <body>
 <h3>Caro Game Simple</h3>
-<p id="carogame" />
+<p id="carogame"/>
 <input type="button" value="Change Value" onclick="changeValue()">
 <script>
     let board = [];
@@ -14,16 +14,16 @@
     for (let i = 0; i < 5; i++) {
         board[i] = new Array(0, 0, 0, 0, 0);
     }
-
+    // Khai báo biến
     for (let i = 0; i < 5; i++) {
         data += "<br/>";
         for (let j = 0; j < 5; j++) {
             data += board[i][j] + "&nbsp";
         }
     }
-
     data += "<br/><br/><input type='button' value='Change Value' onclick='changeValue()'>"
-   document.getElementById("carogame").innerHTML = data;
+    document.getElementById("carogame").innerHTML = data;
+// Vẽ Bàn Cờ
     function changeValue() {
         let positionX = prompt("X: ");
         let positionY = prompt("Y: ");
@@ -38,6 +38,7 @@
         data += "<br/><br/><input type='button' value='Change Value' onclick='changeValue()'>"
         document.getElementById("carogame").innerHTML = "<hr/>" + data;
     }
+    // Chức năng thay đổi 0 sang x khi ấn ChangeValue và nhập tọa độ
 </script>
 </body>
 </html>
